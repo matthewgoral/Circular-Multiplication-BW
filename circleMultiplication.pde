@@ -33,13 +33,7 @@ void draw() {
     line(r*sin(a*i), r*cos(a*i), r*sin(a*i*m), r*cos(a*i*m));
   }
   
-  //m+=randomGaussian()*0.002;
   m = (m + 0.0005) % n;
-  //r+=randomGaussian()*0.5;
-  
-  //if (m % 2 > 1.99) {
-  //  r = 280;
-  //}
   
   if (m < 0) {
     m += n;
