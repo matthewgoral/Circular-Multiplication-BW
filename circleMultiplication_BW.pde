@@ -18,16 +18,17 @@ void draw() {
     for(int i = 0; i < width; i++){
       for(int j = 0; j < height; j++){
         int loc = i + j * width;
-        int c = int(90-dist(i, j, 400, 400)*0.1);
-        pixels[loc] = color(h, c, c);
+        int c = int(240-dist(i, j, 400, 400)*0.1);
+        pixels[loc] = color(h, 5, c);
       }
     }
   updatePixels();
   translate(height/2, height/2);
   
-  h = int((2550/n)*m)/10;
-  stroke(h, 100, 255);
-  fill(h, 100, 255);
+  //h = int((2550/n)*m)/10;
+  h = 0;
+  stroke(h, 10, 25);
+  fill(h, 10, 25);
   
   for(int i = 0; i < n; i++) {
     line(r*sin(a*i), r*cos(a*i), r*sin(a*i*m), r*cos(a*i*m));
