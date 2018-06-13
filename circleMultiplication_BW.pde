@@ -39,9 +39,10 @@ void draw() {
   if (m < 0) {
     m += n;
   }
+  String ms = String.format("%.2f", m);
   
   textAlign(CENTER);
-  text(m, 0, 340);
+  text(n + " * " + ms, 0, 340);
 }
 
 void keyPressed() {
